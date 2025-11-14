@@ -2,7 +2,7 @@
 
 // TradingViewWidget.jsx
 import React, {  useRef, memo } from 'react';
-import useTrandingViewWidget from './hooks/useTrandingViewWidget';
+import useTrandingViewWidget from '../hooks/useTrandingViewWidget';
 import { cn } from '@/lib/utils';
 
 interface TradingViewWidgetProps {
