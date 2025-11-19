@@ -16,11 +16,13 @@ const NavItems = ({initialStocks}:{initialStocks: StockWithWatchlistStatus[]}) =
       {NAV_ITEMS.map(({ href, label }) => {
 
         if(href === '/search') return (
-          <SearchCommand
-          renderAs="text"
-          label="Search"
-          initialStocks={initialStocks}
-          />
+          <li key="search-trigger">
+                        <SearchCommand
+                            renderAs="text"
+                            label="Search"
+                            initialStocks={initialStocks}
+                        />
+                    </li>
         )
         
         return <li key={href}>
